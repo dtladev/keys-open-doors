@@ -65,14 +65,14 @@ html {
  .work .right .client {
 	 position: relative;
 }
- .work .right .client:hover a {
+ .work .right .client:hover span {
 	 opacity: 1;
 }
  .work .right .client img {
 	 display: block;
 	 width: 100%;
 }
- .work .right .client a {
+ .work .right .client span {
 	 padding: 5px 10px;
 	 background: #fff;
 	 color: #222;
