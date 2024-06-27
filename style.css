@@ -108,7 +108,7 @@ html {
 	 .work .left .details {
 		 margin: 8px 0 0;
 	}
-	 .work .right .client a {
+	 .work .right .client span {
 		 opacity: 1;
 	}
 }
