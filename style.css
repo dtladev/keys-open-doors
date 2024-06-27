@@ -1,0 +1,126 @@
+html {
+	 padding: 0;
+	 margin: 0;
+	 background: #fff;
+	 font-family: stevie-sans, sans-serif;
+	 font-weight: 400;
+	 font-size: 13px;
+}
+ html body {
+	 margin: 0;
+	 padding: 0;
+	 -webkit-font-smoothing: antialiased;
+	 position: relative;
+}
+ a {
+	 text-decoration: none;
+}
+ * {
+	 box-sizing: border-box;
+}
+ header {
+	 position: fixed;
+	 top: 0;
+	 right: 0;
+	 width: 50%;
+	 z-index: 10;
+	 mix-blend-mode: difference;
+	 padding: 30px 30px 0;
+	 font-size: 48px;
+	 font-weight: 600;
+	 text-align: right;
+}
+ header .logo {
+	 color: #fff;
+}
+ .work {
+	 display: grid;
+	 grid-template-columns: 1fr 1fr;
+}
+ .work .left {
+	 position: relative;
+	 padding: 30px 15px 30px 30px;
+	 display: flex;
+	 flex-direction: column;
+}
+ .work .left .title {
+	 font-size: 72px;
+	 font-weight: 600;
+}
+ .work .left .details {
+	 margin: 12px 0 0;
+}
+ .work .left .details, .work .left .contact {
+	 font-size: 16px;
+}
+ .work .left .contact {
+	 color: #222;
+	 text-decoration: underline;
+}
+ .work .right {
+	 display: grid;
+	 grid-template-columns: 1fr;
+	 row-gap: 3px;
+}
+ .work .right .client {
+	 position: relative;
+}
+ .work .right .client:hover a {
+	 opacity: 1;
+}
+ .work .right .client img {
+	 display: block;
+	 width: 100%;
+}
+ .work .right .client a {
+	 padding: 5px 10px;
+	 background: #fff;
+	 color: #222;
+	 text-decoration: none;
+	 position: absolute;
+	 bottom: 3px;
+	 right: 3px;
+	 opacity: 0;
+}
+ @media screen and (max-width: 1024px) {
+	 header {
+		 font-size: 48px;
+	}
+	 .work .left .title {
+		 font-size: 48px;
+	}
+}
+ @media screen and (max-width: 800px) {
+	 html body {
+		 padding: 75px 0 0;
+	}
+	 header {
+		 width: 100%;
+		 text-align: left;
+		 padding: 15px 15px 0;
+	}
+	 .work {
+		 grid-template-columns: 1fr;
+	}
+	 .work .left {
+		 padding: 0 15px 15px;
+	}
+	 .work .left .details {
+		 margin: 8px 0 0;
+	}
+	 .work .right .client a {
+		 opacity: 1;
+	}
+}
+ @media screen and (max-width: 450px) {
+	 html body {
+		 padding: 62px 0 0;
+	}
+	 header {
+		 font-size: 36px;
+	}
+	 .work .left .title {
+		 font-size: 36px;
+	}
+}
+ 
