@@ -51,11 +51,11 @@ html {
 	 margin: 12px 0 0;
 }
  .work .left .details, .work .left .contact {
-	 font-size: 16px;
+	 font-size: 14px;
 }
  .work .left .contact {
 	 color: #222;
-	 text-decoration: underline;
+	 /*text-decoration: underline;*/
 }
  .work .right {
 	 display: grid;
