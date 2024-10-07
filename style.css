@@ -11,6 +11,7 @@ html {
 	 padding: 0;
 	 -webkit-font-smoothing: antialiased;
 	 position: relative;
+	 color: #222;
 }
  a {
 	 text-decoration: none;
@@ -18,20 +19,24 @@ html {
  * {
 	 box-sizing: border-box;
 }
- header {
-	 position: fixed;
-	 top: 0;
-	 right: 0;
-	 width: 50%;
-	 z-index: 10;
-	 mix-blend-mode: difference;
-	 padding: 30px 30px 0;
-	 font-size: 48px;
-	 font-weight: 600;
-	 text-align: right;
+header {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 50%;
+	z-index: 10;
+	mix-blend-mode: difference;
+	padding: 30px 30px 0;
+	font-size: 48px;
+	font-weight: 600;
+	text-align: right;
+}
+header.relative {
+	position: absolute;
 }
  header .logo {
 	 color: #fff;
+	 white-space: nowrap;
 }
  .work {
 	 display: grid;
@@ -46,16 +51,28 @@ html {
  .work .left .title {
 	 font-size: 72px;
 	 font-weight: 600;
+	 max-width: 785px;
 }
  .work .left .details {
-	 margin: 12px 0 0;
+	/*margin: 12px 0 0;*/
 }
  .work .left .details, .work .left .contact {
-	 font-size: 14px;
+	 font-size: 16px;
 }
  .work .left .contact {
 	 color: #222;
 	 text-decoration: underline;
+}
+.work .left .page-links {
+	display: flex;
+	font-size: 16px;
+	color: #222;
+	text-decoration: underline;
+	margin: 12px 0 0;
+}
+.work .left .page-links a {
+	margin: 0 10px 0 0;
+	color: #222;
 }
  .work .right {
 	 display: grid;
@@ -108,7 +125,7 @@ html {
 	 .work .left .details {
 		 margin: 8px 0 0;
 	}
-	 .work .right .client span {
+	 .work .right .client a {
 		 opacity: 1;
 	}
 }
@@ -123,4 +140,65 @@ html {
 		 font-size: 36px;
 	}
 }
- 
+/*
+
+
+Services
+
+
+*/
+.services {
+	/*background: lime;*/
+	margin: 90px 0 0;
+	margin: 120px 30px 0 0;
+	list-style-type: none;
+	padding: 0;
+}
+.services .service-block {
+	display: flex;
+	flex-direction: column;
+	margin: 0 0 45px;
+}
+.services .service-block.active ul {
+	display: block;
+}
+.services .service-block.active .read-more-btn {
+	display: none;
+}
+.services .service-block .service-btn {
+	font-size: 24px;
+	font-weight: 600;
+	color: #222;
+}
+.services .service-block .desc {
+	margin: 12px 0 0;
+	font-size: 16px;
+	line-height: 22px;
+}
+.services .service-block ul {
+	list-style-type: disc;
+	margin: 12px 0 0;
+	display: none;
+}
+.services .service-block ul li {
+	margin: 0 0 12px;
+	font-size: 16px;
+	line-height: 22px;
+}
+.services .service-block ul li:last-child {
+	margin: 0;
+}
+.services .service-block .read-more-btn {
+	text-decoration: underline;
+	font-size: 16px;
+	margin: 12px 0 0;
+	color: #222;
+}
+@media screen and (max-width: 800px) {
+	.services {
+		margin: 36px 12px 0;
+	}
+	.services .service-block {
+		margin: 0 0 36px;
+	}
+}
